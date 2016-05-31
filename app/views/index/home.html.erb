@@ -1,0 +1,12 @@
+<h1>Index#home</h1>
+<p>Find me in app/views/index/home.html.erb</p>
+
+TJ is the coolest teacher of all time. 
+
+<% if user_signed_in? %>
+<br><br>
+logged in as <%=current_user.email%>
+<% else %>
+  <%= link_to('Login', new_user_session_path)  %>  
+
+<% end %>
